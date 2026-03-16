@@ -1,0 +1,196 @@
+admin
+password
+
+cashier1
+password
+
+reception1
+password
+
+Budget Supermarket Warehouse Goods Registration Management System
+1. System Overview
+
+The Warehouse Goods Registration Management System (WGRMS) is an offline web-based application designed to help Budget Supermarket manage warehouse inventory efficiently. The system allows users to register goods, monitor stock levels, track stock history, and manage inventory activities through a structured interface.
+
+The system improves inventory accuracy, reduces manual record errors, and provides quick access to warehouse information.
+
+2. Key Features
+User Authentication
+
+User sign-up and login system.
+
+Secure access to the system using registered accounts.
+
+Logout functionality.
+
+Dashboard (Home)
+
+Overview of warehouse operations.
+
+Displays:
+
+Total goods in the system
+
+Total stock value
+
+Low stock alerts
+
+Recent activities showing users who updated stock.
+
+Goods List
+
+Displays all registered goods.
+
+Includes:
+
+Product ID
+
+Name
+
+Description
+
+Category
+
+Quantity
+
+Price
+
+Search functionality to quickly find goods.
+
+Add Goods
+
+Users can add new goods to the warehouse inventory with the following fields:
+
+Product Name
+
+Category
+
+Description
+
+Quantity
+
+Price
+
+Stock History
+
+Tracks all inventory changes including:
+
+Product updates
+
+Quantity changes
+
+User who made the change
+
+Date and time of activity
+
+3. System Structure
+htdocs/
+└── goods-management/
+    ├── index.php
+    ├── dashboard.php
+    ├── auth.php
+    ├── goods.php
+    ├── config.php
+    ├── logout.php
+    ├── css/
+    │   └── style.css
+    ├── js/
+    │   └── script.js
+4. Technologies Used
+Technology	Purpose
+PHP	Backend server-side programming
+MySQL	Database management
+HTML	Structure of web pages
+CSS	User interface styling
+JavaScript	Interactive features
+XAMPP	Local server environment
+5. Database Tables
+
+The system uses the following tables:
+
+Users
+
+Stores user account information.
+
+Goods
+
+Stores all product details in the warehouse.
+
+Stock History
+
+Stores all stock changes and updates.
+
+6. Installation Guide
+Step 1: Install XAMPP
+
+Download and install XAMPP.
+
+Step 2: Copy Project
+
+Place the system folder inside:
+
+xampp/htdocs/
+
+Example:
+
+xampp/htdocs/goods-management
+Step 3: Start Services
+
+Open XAMPP Control Panel and start:
+
+Apache
+
+MySQL
+
+Step 4: Create Database
+
+Open your browser and go to:
+
+http://localhost/phpmyadmin
+
+Create a database called:
+
+warehouse
+
+Import or create the required tables.
+
+Step 5: Run the System
+
+Open the system in a browser:
+
+http://localhost/budget_supermarket
+
+You will see the login page.
+
+7. System Navigation
+Page	Description
+Login	User authentication
+Sign Up	Create new user account
+Home	Dashboard overview
+Goods List	View all goods
+Add Goods	Register new products
+Stock History	Track inventory changes
+8. Version
+
+Current Version:
+
+Version 000.001
+9. Future Improvements
+
+Possible upgrades for the system include:
+
+Barcode scanning integration
+
+Automatic stock alerts
+
+Supplier management
+
+Sales integration
+
+Data export reports (PDF/Excel)
+
+Multi-warehouse support
+
+10. Author
+
+System developed for Budget Supermarket Warehouse Management.
